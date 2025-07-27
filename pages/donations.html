@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Buddhist Centre Utrecht</title>
+    <title>Donations</title>
     <link rel="icon" href="/images/tbc-logo-60.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-        <!-- TODO: Create responsive navbar -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,20 +19,15 @@
                 <li><a href="donations.html">Donations</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+        </nav>
     </header>
     <main>
-        <h1>Welcome to the Buddhist Centre Utrecht</h1>
-        <p>Explore our teachings, events, and community activities.</p>
-        <section>
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Weekly Meditation - Every Wednesday at 7 PM</li>
-                <li>Monthly Dharma Talk - First Sunday of each month</li>
-                <li>Annual Retreat - Coming this summer!</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Buddhist Centre Utrecht. All rights reserved.</p>
+        <h1>Support the Buddhist Centre Utrecht</h1>
+        <p>Your donations help us rent the space to organise our meditations and events.</p>
+        <form action="/donate" method="post">
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Donate</button>
+        </form>
 </body>
 </html>

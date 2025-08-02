@@ -95,7 +95,7 @@ footer {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("/images/4kbuddha-banner.jpg");
+  background: url("/docs/images/4kbuddha-banner.jpg");
   background-position: center 10%;
   background-size: cover;
 }

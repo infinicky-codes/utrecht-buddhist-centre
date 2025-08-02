@@ -1,3 +1,3 @@
 # README
 
-Project for creating a website for the Buddhist Centre Utrecht.
+Project for creating a website for the Utrecht Buddhist Centre.

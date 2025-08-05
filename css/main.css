@@ -1,0 +1,236 @@
+/* margin: top right bottom left */
+
+:root {
+    /* Custom Triratna colours */
+    --triratna-blue: #1c75be;
+    --triratna-yellow: #f2c94c;
+    --triratna-red: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth /* Smooth scrolling for anchor links */;
+}
+
+body {
+    background-color: #202020; /* Dark background for the website */
+    color: white;
+}
+
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header always displays on top */
+    width: 100%;
+    height: 50px;
+    background: #202020;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.header-main-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header-main-logo img {
+    height: 35px;
+}
+
+.header-main-navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    gap: 20px;
+    font-size: 0.8em;
+}
+
+.header-main-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-main-navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    padding: 60px 0 0 0; /* Adjusted based on header height */
+}
+
+.homepage {
+    background-image: url("../img/4kbuddha-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: 45px ; /* Adapt to header height */;
+    height: 100vh; /* Full viewport height */;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.home-title {
+    font-size: 4em;
+}
+
+.home-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.home-nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-button {
+    background: none;
+    margin-top: 20px;
+    width: fit-content;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: #1c75be 2px solid;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+}
+
+.nav-button:hover {
+    background-color: #1c75be;
+}
+
+a {
+    color: white; /* Inherit color from parent */
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* MOBILE */
+@media screen and (max-width: 620px) {
+    /* HAMBURGER MENU */
+    .header-main-hamburger .bar {
+        width: 30px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px 0;  
+    }
+    
+    .header-main-hamburger {
+        padding: 10px;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    
+    .header-main-hamburger:hover {
+        cursor: pointer;
+        background-color: #1c75be; /* Change background on hover */
+    }
+    
+    #navbar-links {
+        display: none; /* Hide the navigation links on mobile */
+        margin: 0;
+        right: 0;
+        background-color: #1c75be; /* Match header background */
+        position: fixed;
+        top: 50px; /* Below the header */
+        width: 100%; /* Full width for mobile */
+    }
+    #navbar-links.show {
+        display: block !important; /* Show links when toggled */
+    }
+
+    #navbar-links li {
+        width: 100%; /* Full width for each link */
+        text-align: center; /* Center align text */
+        padding: 0;
+    }
+    
+    #navbar-links li:hover {
+        background-color: #ddd;
+    }
+    
+    #navbar-links li a {
+        display: block; /* Block display for full width */
+        width: 100%; /* Full width for each link */
+        padding: 10px 20px; /* Padding for each link */
+        text-decoration: none;
+    }
+
+    #navbar-links li:hover a { 
+        color: #000000; /* Change text color on hover */
+    }
+
+
+    /* Adjust image resolution */
+    .homepage {
+        background-image: url("../img/2kbuddha-banner.jpg");
+    }
+
+    .home-title {
+        font-size: 2.5em;
+    }
+
+    .nav-button {
+        width: fit-content;
+        font-size: 1em;
+    }
+}
+
+
+/* DYNAMIC BUTTON */
+/* Only show the dynamic button on larger screens */
+@media screen and (min-width: 621px) {
+    .nav-button a {
+        transition: 0.5s;
+        position: relative;
+    }
+
+    .nav-button a:after {
+        content: "\00bb"; /* Unicode for right arrow */
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .nav-button:hover a {
+        padding-right: 25px;
+    }
+
+    .nav-button:hover a:after {
+        opacity: 1;
+        right: 0;
+    }
+}

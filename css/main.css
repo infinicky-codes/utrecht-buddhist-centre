@@ -136,7 +136,7 @@ footer {
 
 
 /* MOBILE */
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 625px) {
     /* HAMBURGER MENU */
     .header-main-hamburger .bar {
         width: 30px;
@@ -207,13 +207,21 @@ footer {
     }
 }
 
+/*  from screen width of 760 to 620, adjust size of logo and text */
+@media screen and (min-width: 620px) and (max-width: 760px) {
+    .header-main-logo img {
+        height: 40px; /* Adjust logo size for smaller screens */
+    }
 
-@media screen and (min-width: 746px) {
     .header-main-navbar ul {
-        gap: 45px; /* Adjusted for larger screens */
-        font-size: 1.2em;
+        gap: 20px; /* Adjusted for smaller screens */
+        font-size: 0.8em;
     }
     
+}
+
+/* For screens larger than 761px */
+@media screen and (min-width: 761px) {
     /* Only show the dynamic button on larger screens */
     .nav-button a {
         transition: 0.5s;
@@ -239,9 +247,23 @@ footer {
     }
 }
 
-@media screen and (max-width: 940px) {
+/* For screens between 940px and 760px, adjust navbar text */
+@media screen and (min-width: 760px) and (max-width: 955px) {
     .header-main-navbar ul {
-        gap: 25px; /* Adjusted for smaller screens */
+        gap: 25px; /* Adjusted for medium screens */
         font-size: 1em;
     }
+}
+
+/* Larger screens */
+@media screen and (min-width: 955px) {
+    .header-main-navbar ul {
+        gap: 45px; /* Adjusted for larger screens */
+        font-size: 1.2em;
+    }
+    
+    .header-main-logo img {
+        height: 50px; /* Adjust logo size for larger screens */
+    }
+    
 }

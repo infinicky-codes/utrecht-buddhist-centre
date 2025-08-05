@@ -136,7 +136,7 @@ footer {
 
 
 /* MOBILE */
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 650px) {
     /* HAMBURGER MENU */
     .header-main-hamburger .bar {
         width: 30px;
@@ -207,8 +207,8 @@ footer {
     }
 }
 
-/*  from screen width of 760 to 620, adjust size of logo and text */
-@media screen and (min-width: 620px) and (max-width: 760px) {
+/*  from screen width of 760 to 650, adjust size of logo and text */
+@media screen and (min-width: 650px) and (max-width: 760px) {
     .header-main-navbar ul {
         gap: 20px; /* Adjusted for smaller screens */
         font-size: 0.9em;

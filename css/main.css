@@ -51,7 +51,7 @@ body {
     display: flex;
     list-style: none;
     margin-right: 10px;
-    gap: 35px;
+    gap: 35px; /* Adjusted for larger screens */
     font-size: 1em;
 }
 
@@ -136,7 +136,7 @@ footer {
 
 
 /* MOBILE */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 745px) {
     /* HAMBURGER MENU */
     .header-main-hamburger .bar {
         width: 30px;
@@ -208,9 +208,13 @@ footer {
 }
 
 
-/* DYNAMIC BUTTON */
-/* Only show the dynamic button on larger screens */
-@media screen and (min-width: 621px) {
+@media screen and (min-width: 746px) {
+    .header-main-navbar ul {
+        gap: 45px; /* Adjusted for larger screens */
+        font-size: 1.2em;
+    }
+    
+    /* Only show the dynamic button on larger screens */
     .nav-button a {
         transition: 0.5s;
         position: relative;
@@ -232,5 +236,12 @@ footer {
     .nav-button:hover a:after {
         opacity: 1;
         right: 0;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .header-main-navbar ul {
+        gap: 25px; /* Adjusted for smaller screens */
+        font-size: 1em;
     }
 }

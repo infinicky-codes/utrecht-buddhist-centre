@@ -121,6 +121,20 @@ a {
     text-decoration: none;
 }
 
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+.buddha-video-call {
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+}
+
 /* FOOTER */
 footer {
     background-color: #424242;

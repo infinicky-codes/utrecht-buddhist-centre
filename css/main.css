@@ -1,4 +1,10 @@
 /* margin: top right bottom left */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+strong { font-weight: bold; }
 
 :root {
     /* Custom Triratna colours */
@@ -12,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400; /* Default font weight */
 }
 
 html {
@@ -58,7 +65,7 @@ body {
 .header-main-navbar a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .header-main-navbar a:hover {
@@ -77,6 +84,7 @@ section {
     background-image: url("../img/4kbuddha-banner.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-position-y: 45px ; /* Adapt to header height */;
     height: 100vh; /* Full viewport height */;
     width: 100%;

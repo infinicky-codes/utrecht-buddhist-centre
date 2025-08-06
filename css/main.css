@@ -66,12 +66,23 @@ body {
     text-decoration: underline;
 }
 
-main {
-    text-align: center;
+/* Exclude homepage */
+section:not(.homepage) {
+    margin: 0 5vw;
+
 }
 
 section {
     padding: 60px 0 0 0; /* Adjusted based on header height */
+}
+
+section a {
+    color: var(--triratna-blue);
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
 }
 
 .homepage {
@@ -79,13 +90,19 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 45px ; /* Adapt to header height */;
-    height: 100vh; /* Full viewport height */;
+    background-position-y: 45px ; /* Adapted to header height */;
+    height: 100vh; /* Full page cover */;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    text-align: center;
+}
+
+.homepage a {
+    color: white;
+    text-decoration: none;
 }
 
 .home-title {
@@ -119,11 +136,6 @@ section {
     background-color: #1c75be;
 }
 
-a {
-    color: white; /* Inherit color from parent */
-    text-decoration: none;
-}
-
 .contact-container {
     display: flex;
     align-items: center;
@@ -131,6 +143,7 @@ a {
     gap: 50px;
     padding: 20px;
 }
+
 .buddha-video-call {
     width: 100%;
     max-width: 400px; /* Limit the maximum width */
@@ -211,7 +224,7 @@ footer {
 
     /* Adjust image resolution */
     .homepage {
-        background-image: url("../img/2kbuddha-banner.jpg");
+        background-image: url("../img/4kbuddha-banner.jpg");
     }
 
     .home-title {
@@ -277,5 +290,4 @@ footer {
     .header-main-logo img {
         height: 50px; /* Adjust logo size for larger screens */
     }
-    
 }

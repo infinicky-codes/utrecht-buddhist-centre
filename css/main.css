@@ -105,6 +105,10 @@ section a:hover {
     text-decoration: none;
 }
 
+.homepage a:hover {
+    text-decoration: none;
+}
+
 .home-title {
     font-size: 4em;
     font-weight: 400;

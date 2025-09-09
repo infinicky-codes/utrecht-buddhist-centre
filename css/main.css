@@ -190,6 +190,10 @@ footer {
         cursor: pointer;
         background-color: #1c75be; /* Change background on hover */
     }
+
+    .language-switcher {
+        margin-right: 50px; /* Adjust to avoid overlap with hamburger */
+    }
     
     #navbar-links {
         display: none; /* Hide the navigation links on mobile */

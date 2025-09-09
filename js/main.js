@@ -37,7 +37,12 @@ function toggleLanguage(lang) {
     if (lang === 'en') {
         enContent.forEach(content => {
             if (content.id === "navbar-links") {
-                content.style.display = 'flex';
+                // Only show if hamburger menu is open
+                if (content.classList.contains("show")) {
+                    content.style.display = 'block'; // For mobile
+                } else {
+                    content.style.display = 'none'; // For desktop
+                }
             } else {
                 content.style.display = 'block';
             }
@@ -48,7 +53,12 @@ function toggleLanguage(lang) {
     } else if (lang === 'nl') {
         nlContent.forEach(content => {
             if (content.id === "navbar-links") {
-                content.style.display = 'flex';
+                // Only show if hamburger menu is open
+                if (content.classList.contains("show")) {
+                    content.style.display = 'block'; // For mobile
+                } else {
+                    content.style.display = 'none'; // For desktop
+                }
             } else {
                 content.style.display = 'block';
             }

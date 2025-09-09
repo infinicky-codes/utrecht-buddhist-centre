@@ -22,3 +22,24 @@ document.addEventListener("click", function(event) {
         nav.classList.remove("show");
     }
 });
+
+// TODO: Add language toggle functionality
+function toggleLanguage(lang) {
+    var activeFlag = document.getElementById(`lang-${lang}-btn`);
+    activeFlag.style.display = 'none';
+    var inactiveLang = lang === 'en' ? 'nl' : 'en';
+    var inactiveFlag = document.getElementById(`lang-${inactiveLang}-btn`);
+    inactiveFlag.style.display = 'inline';
+
+
+    var enContent = document.querySelectorAll('.lang-en');
+    var nlContent = document.querySelectorAll('.lang-nl');
+
+    if (lang === 'en') {
+        enContent.forEach(content => content.style.display = 'block');
+        nlContent.forEach(content => content.style.display = 'none');
+    } else if (lang === 'nl') {
+        enContent.forEach(content => content.style.display = 'none');
+        nlContent.forEach(content => content.style.display = 'block');
+    }
+}

@@ -66,6 +66,13 @@ body {
     text-decoration: underline;
 }
 
+
+.language-switcher img {
+    max-height: 20px;
+    cursor: pointer;
+    margin-right: 10px
+}
+
 /* Exclude homepage */
 section:not(.homepage) {
     margin: 0 5vw;
@@ -192,7 +199,7 @@ footer {
     }
 
     .language-switcher {
-        margin-right: 50px; /* Adjust to avoid overlap with hamburger */
+        margin-right: 40px; /* Adjust to avoid overlap with hamburger */
     }
     
     #navbar-links {

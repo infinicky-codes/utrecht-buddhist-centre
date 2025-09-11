@@ -24,21 +24,43 @@
             <a href="#home"><img src="img/ubc-logo_white_font.png" alt="Utrecht Buddhist Centre Logo"></a>
         </div>
         <nav class="header-main-navbar">
-            <ul id="navbar-links" class="lang-en">
-                <li><a href="#about">About</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#retreats">Retreats</a></li>                
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#donations">Donations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul id="navbar-links" class="lang-nl" style="display:none">
-                <li><a href="#about">Over ons</a></li>
-                <li><a href="#activities">Activiteiten</a></li>
-                <li><a href="#retreats">Retraites</a></li>                
-                <li><a href="#resources">Bronnen</a></li>
-                <li><a href="#donations">Doneren</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="navbar-links">
+                <li>
+                    <a href="#about">
+                        <span class="lang-en">About</span>
+                        <span class="lang-nl" style="display:none">Over ons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#activities">
+                        <span class="lang-en">Activities</span>
+                        <span class="lang-nl" style="display:none">Activiteiten</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#retreats">
+                        <span class="lang-en">Retreats</span>
+                        <span class="lang-nl" style="display:none">Retraites</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#resources">
+                        <span class="lang-en">Resources</span>
+                        <span class="lang-nl" style="display:none">Bronnen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#donations">
+                        <span class="lang-en">Donate</span>
+                        <span class="lang-nl" style="display:none">Doneren</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="lang-en">Contact</span>
+                        <span class="lang-nl" style="display:none">Contact</span>
+                    </a>
+                </li>
             </ul>
             <!-- For mobile -->
             <div class="header-main-hamburger" onclick="toggleNav()">
@@ -47,10 +69,9 @@
                 <div class="bar"></div>
             </div>
         </nav>
-        <!-- TODO: fix styling in mediaQueries to accommodate the new item -->
         <div class="language-switcher">
-            <button id="lang-en-btn" style="display: none" onclick="toggleLanguage('en')">EN</button>
-            <button id="lang-nl-btn" onclick="toggleLanguage('nl')">NL</button>
+            <img id="lang-en-btn" style="display: none" onclick="toggleLanguage('en')" src="img/flag-uk.png" alt="Flag of the UK">
+            <img id="lang-nl-btn" onclick="toggleLanguage('nl')" src="img/flag-nl.png" alt="Nederlandse vlag">
         </div>
     </header>
 
@@ -58,7 +79,7 @@
     <main>
 
         <section class="homepage" id="home" aria-label="Background image credits: uploaded by laurentiudll on wallpapercave.com">
-            <div class="content lang-en">
+            <div class="lang-en">
                 <h1 class="home-title">Welcome to the Utrecht Buddhist Centre</h1>
                 <div class="home-nav-buttons">
                     <button class="nav-button"><a href="#about">Learn more about us</a></button>
@@ -66,7 +87,7 @@
                 </div>
             </div>
             
-            <div class="content lang-nl" style="display:none">
+            <div class="lang-nl" style="display:none">
                 <h1 class="home-title">Welkom bij het Boeddhistisch Centrum Utrecht</h1>
                 <div class="home-nav-buttons">
                     <button class="nav-button"><a href="#about">Lees meer over ons</a></button>

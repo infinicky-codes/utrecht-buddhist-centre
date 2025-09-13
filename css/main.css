@@ -76,7 +76,6 @@ body {
 /* Exclude homepage */
 section:not(.homepage) {
     margin: 0 5vw;
-
 }
 
 section {
@@ -284,6 +283,11 @@ footer {
     .nav-button:hover a:after {
         opacity: 1;
         right: 0;
+    }
+
+    /* Exclude homepage */
+    section:not(.homepage) {
+        margin: 0 20vw;
     }
 }
 

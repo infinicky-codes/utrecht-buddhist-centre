@@ -96,14 +96,13 @@ section:not(.homepage) {
 }
 
 section {
-    padding: 60px 0 0 0; /* Adjusted based on header height */
+    padding: 60px 0 30px 0; /* Adjusted based on header height */
     /* each section uses the full vph */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* center text vertically on page */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 section h1, section h2 {
@@ -183,11 +182,26 @@ section a {
     background-color: #1c75be;
 }
 
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .buddha-video-call {
     width: 100%;
     max-width: 400px; /* Limit the maximum width */
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px;
+    padding: 30px;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 /* FOOTER */

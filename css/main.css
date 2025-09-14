@@ -117,7 +117,8 @@ section h2 {
 }
 
 section ul, ol {
-  padding-inline-start: 1em;
+    margin-top: 5px;
+    padding-inline-start: 1em;
 }
 
 section a {
@@ -188,9 +189,8 @@ section a {
 }
 
 .buddha-video-call {
-    width: 100%;
-    max-width: 400px; /* Limit the maximum width */
-    height: auto; /* Maintain aspect ratio */
+    height: 400px;
+    object-fit: cover;
     margin-top: 20px;
     padding: 30px;
 }
@@ -291,6 +291,15 @@ footer {
     .nav-button {
         width: fit-content;
         font-size: 1em;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .buddha-video-call {
+        display: none; /* Hide video call image on mobile */
     }
 }
 

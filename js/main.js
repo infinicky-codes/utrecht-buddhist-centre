@@ -43,7 +43,11 @@ function toggleLanguage(lang) {
                 } else {
                     content.style.display = 'none'; // For desktop
                 }
-            } else {
+            } 
+            else if (content.classList.contains("contact-section")) {
+                content.style.display = 'flex'; // Keep flex for contact section
+            } 
+            else {
                 content.style.display = 'block';
             }
         });
@@ -59,7 +63,11 @@ function toggleLanguage(lang) {
                 } else {
                     content.style.display = 'none'; // For desktop
                 }
-            } else {
+            } 
+            else if (content.classList.contains("contact-section")) {
+                content.style.display = 'flex'; // Keep flex for contact section
+            }             
+            else {
                 content.style.display = 'block';
             }
         });

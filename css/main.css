@@ -92,12 +92,6 @@ section:not(.homepage) {
 
 section {
     padding: 60px 0 30px 0; /* Adjusted based on header height */
-    /* each section uses the full vph */
-    /* min-height: 100vh; */
-    /* center text vertically on page */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 section h1, section h2 {
@@ -126,11 +120,11 @@ section a {
 /* Banner that overlays the homepage which says our starting day is on October the 12th */
 .banner {
     width: 100%;
-    background-color: #1c75be; /* Triratna blue */
+    background-color: #1c75be;
     color: white;
     text-align: center;
     font-size: var(--size-step-2);
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     top: 50px; /* Just below the header */
     left: 0;

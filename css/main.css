@@ -128,7 +128,7 @@ section a {
     position: fixed;
     top: 50px; /* Just below the header */
     left: 0;
-    z-index: 1001; /* Ensure banner is above other content */
+    z-index: 999; /* Ensure banner is above other content, but not the hamburger menu */
 }
 
 .homepage {

@@ -120,7 +120,7 @@ section a {
 /* Banner that overlays the homepage which says our starting day is on October the 12th */
 .banner {
     width: 100%;
-    background-color: #1c75be;
+    background-color: #39a1f6;
     color: white;
     text-align: center;
     font-size: var(--size-step-2);
@@ -132,7 +132,7 @@ section a {
 }
 
 .homepage {
-    background-image: url("../img/4kbuddha-banner.jpg");
+    background-image: url("../img/buddha-triratna-banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,13 +177,13 @@ section a {
     width: fit-content;
     font-size: 1.5em;
     padding: 10px 20px;
-    border: #1c75be 2px solid;
+    border: #39a1f6 2px solid;
     border-radius: 6px;
     transition-duration: 0.4s;
 }
 
 .nav-button:hover {
-    background-color: #1c75be;
+    background-color: #39a1f6;
 }
 
 .contact-section {
@@ -192,7 +192,7 @@ section a {
 }
 
 .buddha-video-call {
-    height: 400px;
+    height: 350px;
     object-fit: cover;
     margin-top: 20px;
     padding: 30px;
@@ -284,7 +284,7 @@ footer {
 
     /* Adjust image resolution */
     .homepage {
-        background-image: url("../img/2kbuddha-banner.jpg");
+        background-image: url("../img/buddha-triratna-4k.png");
     }
 
     .home-title {

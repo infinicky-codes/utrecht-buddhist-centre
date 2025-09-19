@@ -240,7 +240,7 @@ footer {
     
     .header-main-hamburger:hover {
         cursor: pointer;
-        background-color: #1c75be; /* Change background on hover */
+        background-color: #39a1f6; /* Change background on hover */
     }
 
     .language-switcher {
@@ -251,7 +251,7 @@ footer {
         display: none; /* Hide the navigation links on mobile */
         margin: 0;
         right: 0;
-        background-color: #1c75be; /* Match header background */
+        background-color: #39a1f6; /* Match header background */
         position: fixed;
         top: 50px; /* Below the header */
         width: 100%; /* Full width for mobile */

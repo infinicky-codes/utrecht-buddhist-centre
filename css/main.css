@@ -63,8 +63,8 @@ h1, h2, h3 {
     display: flex;
     list-style: none;
     margin-right: 10px;
-    gap: 35px; /* Adjusted for larger screens */
-    font-size: 1em;
+    gap: 35px; 
+    font-size: 1.1em;
 }
 
 .header-main-navbar a {
@@ -156,14 +156,9 @@ section a {
 }
 
 .home-title {
-    font-size: 4em;
+    font-size: 3.8em;
     font-weight: 400;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
-}
-
-.home-text {
-    font-size: 1.5em;
-    margin-top: 20px;
 }
 
 .home-nav-buttons {
@@ -223,7 +218,7 @@ footer {
 
 
 /* MOBILE */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     /* HAMBURGER MENU */
     .header-main-hamburger .bar {
         width: 30px;
@@ -257,8 +252,9 @@ footer {
         top: 50px; /* Below the header */
         width: 100%; /* Full width for mobile */
     }
+
     #navbar-links.show {
-        display: block !important; /* Show links when toggled */
+        display: block; /* Show links when toggled */
     }
 
     #navbar-links li {
@@ -282,19 +278,13 @@ footer {
         color: #000000; /* Change text color on hover */
     }
 
-
-    /* Adjust image resolution */
-    .homepage {
-        background-image: url("../img/buddha-triratna-banner.png");
-    }
-
     .home-title {
         font-size: 2.5em;
     }
 
     .nav-button {
         width: fit-content;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .contact-section {
@@ -307,11 +297,15 @@ footer {
     }
 }
 
-/*  from screen width of 760 to 650, adjust size of logo and text */
-@media screen and (min-width: 650px) and (max-width: 760px) {
+/*  from screen width of 760 to 700, adjust size of logo and text */
+@media screen and (min-width: 700px) and (max-width: 760px) {
     .header-main-navbar ul {
         gap: 20px; /* Adjusted for smaller screens */
         font-size: 0.9em;
+    }
+
+    .home-title {
+        font-size: 3em;
     }
 }
 
@@ -347,16 +341,20 @@ footer {
     }
 }
 
-/* For screens between 940px and 760px, adjust navbar text */
-@media screen and (min-width: 760px) and (max-width: 955px) {
+/* For screens between 870px and 760px, adjust text size */
+@media screen and (min-width: 760px) and (max-width: 870px) {
     .header-main-navbar ul {
-        gap: 25px; /* Adjusted for medium screens */
+        gap: 25px; 
         font-size: 1em;
+    }
+
+    .home-title {
+        font-size: 3.5em;
     }
 }
 
 /* Larger screens */
-@media screen and (min-width: 955px) {
+@media screen and (min-width: 969px) {
     .header-main-navbar ul {
         gap: 45px; /* Adjusted for larger screens */
         font-size: 1.2em;

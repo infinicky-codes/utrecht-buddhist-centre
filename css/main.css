@@ -123,7 +123,7 @@ section a {
     background-color: #39a1f6;
     color: white;
     text-align: center;
-    font-size: var(--size-step-2);
+    font-size: var(--size-step-1);
     padding: 10px 0;
     position: fixed;
     top: 50px; /* Just below the header */

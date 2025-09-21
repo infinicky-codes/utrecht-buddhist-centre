@@ -50,17 +50,27 @@ h1, h2, h3 {
     padding: 0 10px;
 }
 
-.header-main-logo a {
-    display: flex;
-    align-items: center;
+/* Logo stays left */
+.header-main-logo {
+    flex: 0 0 auto;
 }
 
 .header-main-logo img {
     height: 45px;
 }
 
+/* Navbar fills the middle */
+/* .header-main-navbar {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Nav items spread out */
 .header-main-navbar ul {
     display: flex;
+    /* justify-content: space-between;
+    width: 90%; */
     list-style: none;
     margin-right: 10px;
     gap: 35px; 

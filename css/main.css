@@ -205,8 +205,9 @@ section a {
 }
 
 .activity-text {
-    min-width: 250px; /* Ensure a minimum width */
-    max-width: 400px; /* Adjust width as needed */
+    flex: 1 1 0%;
+    min-width: 275px; /* Ensure a minimum width */
+    max-width: 600px; /* Optional: limit maximum width */
 }
 
 .singing-bowl {

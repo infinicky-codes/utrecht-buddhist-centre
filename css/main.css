@@ -329,6 +329,12 @@ footer {
     .buddha-video-call {
         display: none; /* Hide video call image on mobile */
     }
+
+    .singing-bowl {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+    }
 }
 
 /*  from screen width of 760 to 700, adjust size of logo and text */

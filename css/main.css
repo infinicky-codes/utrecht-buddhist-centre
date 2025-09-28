@@ -230,7 +230,7 @@ section a {
 
 .buddha-video-call {
     height: 300px;
-    margin-top: 55px;
+    margin-top: 20px;
 }
 
 .map-image {
@@ -325,16 +325,10 @@ footer {
         width: fit-content;
         font-size: 1.2em;
     }
-
-    .contact-section {
-        display: flex;
-        justify-content: space-evenly;
-    }
     
     .buddha-video-call {
-        max-width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        display: block;
+        margin-top: 10px;
+        height: 300px; /* Maintain aspect ratio */
     }
 
     .singing-bowl {
@@ -353,6 +347,10 @@ footer {
 
     .home-title {
         font-size: 3em;
+    }
+
+    .buddha-video-call {
+        margin-top: 55px;
     }
 }
 
@@ -409,5 +407,11 @@ footer {
     
     .header-main-logo img {
         height: 50px; /* Adjust logo size for larger screens */
+    }
+}
+
+@media screen and (min-width: 1064px) {
+    .buddha-video-call {
+        margin-top: 50px;
     }
 }

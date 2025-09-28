@@ -169,7 +169,7 @@ section a {
     font-size: 3.8em;
     font-weight: 400;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
-    margin-top: 69px;;
+    margin-top: 69px;
 }
 
 .home-nav-buttons {
@@ -196,6 +196,28 @@ section a {
 .contact-section {
     display: flex;
     justify-content: space-evenly;
+}
+
+.activity-flexbox {
+    display: flex;
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap;
+}
+
+.activity-text {
+    min-width: 250px; /* Ensure a minimum width */
+    max-width: 400px; /* Adjust width as needed */
+}
+
+.singing-bowl {
+    max-width: 420px;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+.metta-vihara-buddha {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
 }
 
 .buddha-video-call {

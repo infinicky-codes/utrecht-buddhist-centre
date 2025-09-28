@@ -193,11 +193,6 @@ section a {
     background-color: #39a1f6;
 }
 
-.contact-section {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .activity-flexbox {
     display: flex;
     gap: 20px; /* Space between items */
@@ -215,17 +210,27 @@ section a {
     height: auto; /* Maintain aspect ratio */
     display: block;
 }
+
 .metta-vihara-buddha {
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     margin: 20px 0;
 }
 
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    flex: 1 1 300px;
+    max-width: 800px; /* Optional: limit maximum width */
+    margin-right: 20px
+}
+
 .buddha-video-call {
-    height: 350px;
-    object-fit: cover;
-    margin-top: 20px;
-    padding: 30px;
+    height: 300px;
+    margin-top: 55px;
 }
 
 .map-image {
@@ -327,7 +332,9 @@ footer {
     }
     
     .buddha-video-call {
-        display: none; /* Hide video call image on mobile */
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        display: block;
     }
 
     .singing-bowl {

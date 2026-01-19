@@ -210,10 +210,17 @@ section a {
     max-width: 420px;
     height: auto; /* Maintain aspect ratio */
     display: block;
+    margin-bottom: 20px;
 }
 
 .metta-vihara-buddha {
     max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
+}
+
+.bca-buddha {
+    max-width: 420px;
     height: auto; /* Maintain aspect ratio */
     margin: 20px 0;
 }

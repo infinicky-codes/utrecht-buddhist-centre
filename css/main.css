@@ -347,11 +347,6 @@ footer {
         display: block;
     }
 
-    .buddha-activities-banner {
-        max-width: 100%;
-        height: auto; /* Maintain aspect ratio */
-        display: block;
-    }
 }
 
 /*  from screen width of 760 to 700, adjust size of logo and text */

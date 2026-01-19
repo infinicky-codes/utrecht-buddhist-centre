@@ -213,8 +213,8 @@ section a {
     margin-bottom: 20px;
 }
 
-.bca-buddha {
-    max-width: 420px;
+.buddha-activities-banner {
+    max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 20px 0;
@@ -347,7 +347,7 @@ footer {
         display: block;
     }
 
-    .bca-buddha {
+    .buddha-activities-banner {
         max-width: 100%;
         height: auto; /* Maintain aspect ratio */
         display: block;
